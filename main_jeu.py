@@ -20,11 +20,11 @@ def jeu():
 
         # Lancer l'épreuve choisie
         if choix_epreuve == 1:
-            resultat_epreuve = epreuves_mathematiques()
+            resultat_epreuve = epreuve_math()
         elif choix_epreuve == 2:
-            resultat_epreuve = jeu_bataille_navale()
+            resultat_epreuve = lancer_jeu_bataille_navale()
         elif choix_epreuve == 3:
-            resultat_epreuve = epreuves_hasard()
+            resultat_epreuve = epreuve_hasard()
         elif choix_epreuve == 4:
             resultat_epreuve = enigme_pere_fouras()
         else:
@@ -41,7 +41,7 @@ def jeu():
 
     # Début de l'épreuve finale
     print("\nL'épreuve de la Salle au trésor commence !")
-    resultat_final = salle_De_Tresor()
+    resultat_final = salle_de_tresor()
 
     if resultat_final:
         print("L'équipe a remporté le trésor ! Félicitations !")
