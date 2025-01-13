@@ -14,7 +14,7 @@ def enigme_pere_fouras():
     essais_restants = 3
 
     # Charger les énigmes depuis le fichier JSON
-    liste_enigmes = charger_enigmes("data/enigmesPF.json")
+    liste_enigmes = charger_enigmes("enigmesPF.json")
 
     # Choisir une énigme aléatoire
     enigme_choisie = random.choice(liste_enigmes)
