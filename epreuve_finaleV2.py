@@ -9,7 +9,7 @@ def salle_de_tresor():
     reponse_correcte = False
 
     # Chargement des indices à partir du fichier JSON
-    with open("data/indicesSalle.json", "r") as fichier:
+    with open("indicesSalle.json", "r", encoding="utf-8") as fichier:
         jeu_indices = json.load(fichier)
 
     # Sélection aléatoire d'une année et d'une émission
@@ -45,5 +45,7 @@ def salle_de_tresor():
 
     if reponse_correcte:
         print("Vous avez gagné !")
+        return True
     else:
         print("Vous avez perdu !")
+        return False
